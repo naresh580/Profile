@@ -85,6 +85,8 @@ h1 span { color: var(--mint); }
 .credential-list p:first-child { padding-top: 0; }
 .credential-list p:last-child { padding-bottom: 0; border-bottom: 0; }
 .credential-list p > span:first-child { color: var(--coral); font-family: var(--serif); font-size: 12px; font-weight: 400; }
+.credential-list a { text-decoration-color: var(--line); text-underline-offset: 4px; }
+.credential-list a:hover, .credential-list a:focus-visible { color: var(--forest-light); text-decoration-color: currentColor; }
 .credential-provider { margin-left: auto; color: var(--muted); font-size: 12px; font-weight: 400; }
 
 .education-section { padding-bottom: 70px; border-bottom: 0; }
