@@ -12,5 +12,6 @@ Open `index.html` in a browser. The page includes an engineering impact dashboar
 - Use **Print / save resume** to open the browser print dialog and save a printable portfolio as a PDF.
 - Select components in either architecture diagram to read about their role.
 - The terminal types its commands; scroll-triggered reveals and animated metrics also respect the system reduced-motion preference.
+- Portfolio cards use a subtle glassmorphism treatment, and decorative section and diagram numbering is omitted.
 
-The LinkedIn profile and certification cards link to the supplied profiles. No GitHub profile URL or separate resume file was provided, so the page uses the browser's print-to-PDF flow instead of inventing either link.
+The LinkedIn profile and certification cards link to the supplied profiles. The phone number is not displayed. No GitHub profile URL or separate resume file was provided, so the page uses the browser's print-to-PDF flow instead of inventing either link.

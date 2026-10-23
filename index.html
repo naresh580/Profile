@@ -72,7 +72,7 @@
 
     <section class="impact-section section-wrap" id="impact" aria-labelledby="impact-title">
       <div class="section-intro">
-        <p class="section-kicker">01 / Engineering impact</p>
+        <p class="section-kicker">Engineering impact</p>
         <h2 id="impact-title">Outcomes over output.</h2>
         <p>Practical results from modernizing and delivering enterprise software.</p>
       </div>
@@ -89,7 +89,7 @@
     <section class="architecture-section section-dark" id="architecture" aria-labelledby="architecture-title">
       <div class="section-wrap">
         <div class="section-intro section-intro-light">
-          <p class="section-kicker">02 / Systems architecture</p>
+          <p class="section-kicker">Systems architecture</p>
           <h2 id="architecture-title">Systems, from the edge inward.</h2>
           <p>Simplified conceptual views of the financial platforms and engineering concerns in my experience.</p>
         </div>
@@ -97,14 +97,14 @@
           <article class="architecture-card">
             <div class="architecture-heading"><div><span class="card-index">A / PAYMENTS</span><h3>Payment services</h3></div><span class="architecture-tag">Illustrative flow</span></div>
             <div class="flow-diagram" role="group" aria-label="Interactive illustrative payment flow">
-              <button class="flow-node flow-node-entry" type="button" data-architecture-node data-detail="The customer initiates a payment request."><span>01</span><strong>Customer</strong><small>Payment request</small></button>
+              <button class="flow-node flow-node-entry" type="button" data-architecture-node data-detail="The customer initiates a payment request."><strong>Customer</strong><small>Payment request</small></button>
               <span class="flow-arrow" aria-hidden="true">↓</span>
-              <button class="flow-node" type="button" data-architecture-node data-detail="The API gateway provides a secure entry point for payment requests."><span>02</span><strong>API gateway</strong><small>Secure entry point</small></button>
+              <button class="flow-node" type="button" data-architecture-node data-detail="The API gateway provides a secure entry point for payment requests."><strong>API gateway</strong><small>Secure entry point</small></button>
               <span class="flow-arrow" aria-hidden="true">↓</span>
-              <button class="flow-node flow-node-accent" type="button" data-architecture-node data-detail="The Java and Spring Boot payment service handles the core payment workflow."><span>03</span><strong>Payment service</strong><small>Spring Boot · Java</small></button>
+              <button class="flow-node flow-node-accent" type="button" data-architecture-node data-detail="The Java and Spring Boot payment service handles the core payment workflow."><strong>Payment service</strong><small>Spring Boot · Java</small></button>
               <div class="flow-branches">
-                <button class="flow-node" type="button" data-architecture-node data-detail="A Kafka event connects payment processing with a fraud service."><span>04A</span><strong>Fraud service</strong><small>Kafka events</small></button>
-                <button class="flow-node" type="button" data-architecture-node data-detail="The data store persists transaction information."><span>04B</span><strong>Data store</strong><small>Transaction data</small></button>
+                <button class="flow-node" type="button" data-architecture-node data-detail="A Kafka event connects payment processing with a fraud service."><strong>Fraud service</strong><small>Kafka events</small></button>
+                <button class="flow-node" type="button" data-architecture-node data-detail="The data store persists transaction information."><strong>Data store</strong><small>Transaction data</small></button>
               </div>
             </div>
             <p class="diagram-detail" aria-live="polite">Select a component to explore its role in this illustrative flow.</p>
@@ -114,10 +114,10 @@
             <div class="architecture-heading"><div><span class="card-index">B / TRADING</span><h3>Trade processing</h3></div><span class="architecture-tag">Experience highlights</span></div>
             <div class="trading-visual" role="group" aria-label="Interactive conceptual distributed trading platform">
               <button class="trade-center" type="button" data-architecture-node data-detail="High-availability transaction services coordinate trading workflows." aria-pressed="false"><span class="trade-pulse" aria-hidden="true"></span><strong>Transaction<br>services</strong><small>High availability</small></button>
-              <button class="trade-node trade-node-top" type="button" data-architecture-node data-detail="Trade requests enter the platform and begin transaction processing." aria-pressed="false"><span>01</span>Trade requests</button>
-              <button class="trade-node trade-node-left" type="button" data-architecture-node data-detail="Service APIs expose functionality across distributed services." aria-pressed="false"><span>02</span>Service APIs</button>
-              <button class="trade-node trade-node-right" type="button" data-architecture-node data-detail="Event messaging supports communication between distributed services." aria-pressed="false"><span>03</span>Event messaging</button>
-              <button class="trade-node trade-node-bottom" type="button" data-architecture-node data-detail="Optimized data access supports transaction processing." aria-pressed="false"><span>04</span>Optimized data access</button>
+              <button class="trade-node trade-node-top" type="button" data-architecture-node data-detail="Trade requests enter the platform and begin transaction processing." aria-pressed="false">Trade requests</button>
+              <button class="trade-node trade-node-left" type="button" data-architecture-node data-detail="Service APIs expose functionality across distributed services." aria-pressed="false">Service APIs</button>
+              <button class="trade-node trade-node-right" type="button" data-architecture-node data-detail="Event messaging supports communication between distributed services." aria-pressed="false">Event messaging</button>
+              <button class="trade-node trade-node-bottom" type="button" data-architecture-node data-detail="Optimized data access supports transaction processing." aria-pressed="false">Optimized data access</button>
               <div class="trade-line trade-line-one" aria-hidden="true"></div><div class="trade-line trade-line-two" aria-hidden="true"></div><div class="trade-line trade-line-three" aria-hidden="true"></div><div class="trade-line trade-line-four" aria-hidden="true"></div>
             </div>
             <p class="diagram-detail" aria-live="polite">Select a component to explore this conceptual trading platform.</p>
@@ -129,21 +129,21 @@
 
     <section class="case-section section-wrap" id="case-studies" aria-labelledby="case-title">
       <div class="section-intro">
-        <p class="section-kicker">03 / Selected work</p>
+        <p class="section-kicker">Selected work</p>
         <h2 id="case-title">Engineering in context.</h2>
         <p>Three recurring challenges, and the approaches used to address them.</p>
       </div>
       <div class="case-grid">
-        <article class="case-card"><span class="case-number">CASE 01</span><div class="case-icon" aria-hidden="true">↗</div><h3>Banking API modernization</h3><dl><div><dt>Challenge</dt><dd>Legacy Java services needed a maintainable path forward.</dd></div><div><dt>Approach</dt><dd>Modernized APIs with Java 17/21 and Spring Boot 3.</dd></div><div><dt>Outcome</dt><dd>Improved maintainability, stability, and long-term scalability.</dd></div></dl><span class="case-stack">JAVA <i>·</i> SPRING BOOT <i>·</i> REST</span></article>
-        <article class="case-card"><span class="case-number">CASE 02</span><div class="case-icon" aria-hidden="true">⌘</div><h3>Trade processing platform</h3><dl><div><dt>Challenge</dt><dd>Reliable transaction services in a distributed environment.</dd></div><div><dt>Approach</dt><dd>Built and maintained highly available microservices; optimized SQL.</dd></div><div><dt>Outcome</dt><dd>Reduced query time by 5% and API latency by 50 ms.</dd></div></dl><span class="case-stack">MICROSERVICES <i>·</i> SQL <i>·</i> OBSERVABILITY</span></article>
-        <article class="case-card"><span class="case-number">CASE 03</span><div class="case-icon" aria-hidden="true">✳</div><h3>AI-assisted quality engineering</h3><dl><div><dt>Challenge</dt><dd>Manual testing effort and regression risk.</dd></div><div><dt>Approach</dt><dd>Used JUnit, GitLab Duo, and AI-assisted test automation.</dd></div><div><dt>Outcome</dt><dd>Raised automated coverage from 60% to 95%.</dd></div></dl><span class="case-stack">JUNIT <i>·</i> GITLAB DUO <i>·</i> AUTOMATION</span></article>
+        <article class="case-card"><span class="case-label">PAYMENTS / MODERNIZATION</span><div class="case-icon" aria-hidden="true">↗</div><h3>Banking API modernization</h3><dl><div><dt>Challenge</dt><dd>Legacy Java services needed a maintainable path forward.</dd></div><div><dt>Approach</dt><dd>Modernized APIs with Java 17/21 and Spring Boot 3.</dd></div><div><dt>Outcome</dt><dd>Improved maintainability, stability, and long-term scalability.</dd></div></dl><span class="case-stack">JAVA <i>·</i> SPRING BOOT <i>·</i> REST</span></article>
+        <article class="case-card"><span class="case-label">TRADING / DATA</span><div class="case-icon" aria-hidden="true">⌘</div><h3>Trade processing platform</h3><dl><div><dt>Challenge</dt><dd>Reliable transaction services in a distributed environment.</dd></div><div><dt>Approach</dt><dd>Built and maintained highly available microservices; optimized SQL.</dd></div><div><dt>Outcome</dt><dd>Reduced query time by 5% and API latency by 50 ms.</dd></div></dl><span class="case-stack">MICROSERVICES <i>·</i> SQL <i>·</i> OBSERVABILITY</span></article>
+        <article class="case-card"><span class="case-label">AI / QUALITY</span><div class="case-icon" aria-hidden="true">✳</div><h3>AI-assisted quality engineering</h3><dl><div><dt>Challenge</dt><dd>Manual testing effort and regression risk.</dd></div><div><dt>Approach</dt><dd>Used JUnit, GitLab Duo, and AI-assisted test automation.</dd></div><div><dt>Outcome</dt><dd>Raised automated coverage from 60% to 95%.</dd></div></dl><span class="case-stack">JUNIT <i>·</i> GITLAB DUO <i>·</i> AUTOMATION</span></article>
       </div>
     </section>
 
     <section class="experience-section section-dark" id="experience" aria-labelledby="experience-title">
       <div class="section-wrap">
         <div class="section-intro section-intro-light">
-          <p class="section-kicker">04 / Professional experience</p>
+          <p class="section-kicker">Professional experience</p>
           <h2 id="experience-title">A track record of making systems better.</h2>
           <p>Backend engineering across payments, banking, and trading platforms.</p>
         </div>
@@ -168,28 +168,28 @@
 
     <section class="ai-section section-wrap" id="ai-engineering" aria-labelledby="ai-title">
       <div class="ai-orbit" aria-hidden="true"><span>AI</span><i></i><i></i><i></i><i></i></div>
-      <div class="ai-copy"><p class="section-kicker">05 / AI engineering corner</p><h2 id="ai-title">Exploring AI for better engineering.</h2><p>Applying AI-assisted tools to practical development workflows, testing, and engineering productivity.</p><a href="#contact" class="text-link">Let’s talk about engineering <span aria-hidden="true">↗</span></a></div>
+      <div class="ai-copy"><p class="section-kicker">AI engineering corner</p><h2 id="ai-title">Exploring AI for better engineering.</h2><p>Applying AI-assisted tools to practical development workflows, testing, and engineering productivity.</p><a href="#contact" class="text-link">Let’s talk about engineering <span aria-hidden="true">↗</span></a></div>
       <div class="ai-topics" aria-label="AI engineering focus areas"><span>Agent workflows</span><span>Multi-agent systems</span><span>Prompt engineering</span><span>GitHub Copilot</span><span>AI-assisted development</span><span>Engineering automation</span></div>
     </section>
 
     <section class="expertise-section section-wrap" id="expertise" aria-labelledby="expertise-title">
       <div class="section-intro">
-        <p class="section-kicker">06 / Tech stack</p>
+        <p class="section-kicker">Tech stack</p>
         <h2 id="expertise-title">Tools for dependable delivery.</h2>
         <p>A practical toolkit spanning backend development, infrastructure, and AI-assisted workflows.</p>
       </div>
       <div class="stack-grid">
-        <article class="stack-card"><span class="stack-index">01</span><h3>Backend</h3><div class="stack-tags"><span>Java 8 / 17 / 21</span><span>Spring Boot 2 / 3</span><span>REST APIs</span><span>Maven</span><span>JUnit</span></div></article>
-        <article class="stack-card"><span class="stack-index">02</span><h3>Data &amp; messaging</h3><div class="stack-tags"><span>Oracle</span><span>MySQL</span><span>MongoDB</span><span>Kafka</span><span>RabbitMQ</span></div></article>
-        <article class="stack-card"><span class="stack-index">03</span><h3>Cloud &amp; infrastructure</h3><div class="stack-tags"><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>PCF</span></div></article>
-        <article class="stack-card"><span class="stack-index">04</span><h3>Delivery &amp; AI</h3><div class="stack-tags"><span>GitLab CI/CD</span><span>Git</span><span>Bitbucket</span><span>SonarQube</span><span>GitHub Copilot</span><span>Generative AI</span><span>Agentic AI</span></div></article>
+        <article class="stack-card"><h3>Backend</h3><div class="stack-tags"><span>Java 8 / 17 / 21</span><span>Spring Boot 2 / 3</span><span>REST APIs</span><span>Maven</span><span>JUnit</span></div></article>
+        <article class="stack-card"><h3>Data &amp; messaging</h3><div class="stack-tags"><span>Oracle</span><span>MySQL</span><span>MongoDB</span><span>Kafka</span><span>RabbitMQ</span></div></article>
+        <article class="stack-card"><h3>Cloud &amp; infrastructure</h3><div class="stack-tags"><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>PCF</span></div></article>
+        <article class="stack-card"><h3>Delivery &amp; AI</h3><div class="stack-tags"><span>GitLab CI/CD</span><span>Git</span><span>Bitbucket</span><span>SonarQube</span><span>GitHub Copilot</span><span>Generative AI</span><span>Agentic AI</span></div></article>
       </div>
     </section>
 
     <section class="credentials-section section-dark" id="credentials" aria-labelledby="credentials-title">
       <div class="section-wrap">
         <div class="section-intro section-intro-light">
-          <p class="section-kicker">07 / Credentials</p>
+          <p class="section-kicker">Credentials</p>
           <h2 id="credentials-title">Learning, verified.</h2>
           <p>Certifications and achievements with links to their verification pages.</p>
         </div>
@@ -203,7 +203,7 @@
 
     <section class="knowledge-section section-wrap" id="knowledge" aria-labelledby="knowledge-title">
       <div class="section-intro">
-        <p class="section-kicker">08 / Knowledge hub</p>
+        <p class="section-kicker">Knowledge hub</p>
         <h2 id="knowledge-title">Questions worth exploring.</h2>
         <p>Areas of ongoing learning and technical interest.</p>
       </div>
@@ -214,7 +214,7 @@
 
     <section class="education-section section-wrap" id="education" aria-labelledby="education-title">
       <div class="section-intro">
-        <p class="section-kicker">09 / Education</p>
+        <p class="section-kicker">Education</p>
         <h2 id="education-title">Strong foundations.</h2>
       </div>
       <div class="education-detail">
@@ -226,11 +226,11 @@
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="contact-glow" aria-hidden="true"></div>
       <div class="contact-inner">
-        <p class="section-kicker">10 / Get in touch</p>
+        <p class="section-kicker">Get in touch</p>
         <h2 id="contact-title">Let’s build something <span>dependable.</span></h2>
         <p>For thoughtful conversations about backend engineering, enterprise systems, and AI-assisted development.</p>
         <div class="contact-actions"><a class="button button-primary" href="mailto:naresh19chandra98@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="https://www.linkedin.com/in/naresh-chandra-pandey-b0973b1a3/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
-        <div class="contact-meta"><span>Pune, India</span><a href="tel:+919340494150">+91 93404 94150</a><a href="mailto:naresh19chandra98@gmail.com">naresh19chandra98@gmail.com</a></div>
+        <div class="contact-meta"><span>Pune, India</span><a href="mailto:naresh19chandra98@gmail.com">naresh19chandra98@gmail.com</a></div>
       </div>
     </section>
   </main>
