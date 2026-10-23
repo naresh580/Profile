@@ -3,126 +3,250 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173c34">
-  <meta name="description" content="Resume and professional profile of Naresh Chandra Pandey, Java Backend Developer in Pune, India.">
-  <title>Naresh Chandra Pandey | Java Backend Developer</title>
+  <meta name="theme-color" content="#0b1210">
+  <meta name="description" content="Naresh Chandra Pandey is a Java backend developer specializing in enterprise modernization, distributed systems, and financial services.">
+  <title>Naresh Chandra Pandey | Backend Engineer</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Naresh Chandra Pandey, home"><span class="wordmark-mark">NP</span><span>Naresh Chandra Pandey</span></a>
+    <a class="wordmark" href="#top" aria-label="Naresh Chandra Pandey, home">
+      <span class="wordmark-mark">NP</span>
+      <span>Naresh Chandra Pandey</span>
+    </a>
     <nav class="site-nav" aria-label="Main navigation">
+      <a href="#architecture">Architecture</a>
       <a href="#experience">Experience</a>
       <a href="#expertise">Expertise</a>
-      <a href="#education">Education</a>
-      <button class="print-button" type="button" id="print-page">Print resume</button>
+      <a href="#credentials">Credentials</a>
+      <button class="command-trigger" id="open-commands" type="button" aria-haspopup="dialog">
+        <span>Quick navigate</span><kbd>Ctrl K</kbd>
+      </button>
+      <button class="button button-small button-outline" id="print-page" type="button">Print / Save PDF</button>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Java Backend Developer <span class="eyebrow-divider">/</span> Pune, India</p>
-          <h1 id="hero-title">Naresh Chandra <span>Pandey</span></h1>
-          <p class="hero-summary">Building dependable services for the moments that matter.</p>
-          <div class="hero-contact" aria-label="Contact information">
+          <p class="eyebrow"><span class="status-dot"></span> Java Backend Developer <span class="eyebrow-divider">/</span> Pune, India</p>
+          <h1 id="hero-title">Building reliable systems for <span>critical moments.</span></h1>
+          <p class="hero-summary">I modernize backend platforms for banking, trading, and payments—with a focus on dependable services, thoughtful architecture, and measurable engineering outcomes.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#architecture">Explore architecture <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-contact" aria-label="Contact links">
             <a href="mailto:naresh19chandra98@gmail.com">naresh19chandra98@gmail.com</a>
-            <span class="contact-separator" aria-hidden="true">/</span>
-            <a href="tel:+919340494150">+91 93404 94150</a>
-            <span class="contact-separator" aria-hidden="true">/</span>
-            <a href="https://www.linkedin.com/in/naresh-chandra-pandey-b0973b1a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/naresh-chandra-pandey-b0973b1a3/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external-mark" aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="hero-facts" aria-label="Professional highlights">
-          <div class="fact"><strong>4.8<span>+</span></strong><span>years in backend engineering</span></div>
-          <div class="fact"><strong>95<span>%</span></strong><span>automated test coverage achieved</span></div>
-          <div class="fact"><strong>Java</strong><span>8 / 17 / 21</span></div>
-        </aside>
+        <div class="terminal-card" role="group" aria-label="Engineering focus">
+          <div class="terminal-top"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>profile — zsh</span><span>● online</span></div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">$</span> whoami</p>
+            <p class="terminal-output">Naresh Chandra Pandey</p>
+            <p><span class="terminal-prompt">$</span> focus --list</p>
+            <ul class="terminal-list">
+              <li><span>✓</span> Microservices architecture</li>
+              <li><span>✓</span> Banking &amp; payment systems</li>
+              <li><span>✓</span> Trading applications</li>
+              <li><span>✓</span> AI-assisted engineering</li>
+            </ul>
+            <p class="terminal-ready"><span class="terminal-prompt">$</span> <span class="cursor" aria-hidden="true"></span></p>
+          </div>
+          <div class="terminal-footer"><span>JAVA</span><span>SPRING BOOT</span><span>DISTRIBUTED SYSTEMS</span></div>
+        </div>
       </div>
-      <div class="hero-index" aria-hidden="true">PROFILE&nbsp; / &nbsp;2026</div>
+      <div class="hero-bottom"><span>ENGINEERING WITH INTENT</span><a href="#impact">Scroll to explore <span aria-hidden="true">↓</span></a></div>
     </section>
 
-    <div class="page-shell">
-      <section class="content-section summary-section" aria-labelledby="summary-title">
-        <div class="section-heading"><span class="section-number">01</span><h2 id="summary-title">Profile</h2></div>
-        <div class="section-body">
-          <p class="profile-copy">Java Backend Developer with 4.8+ years of experience building scalable microservices, high-performance REST APIs, and cloud-native backend systems for banking and trading platforms. Strong expertise in Java 8/17/21, Spring Boot, distributed systems, API modernization, CI/CD, and performance optimization. Proven record of reducing technical debt, accelerating delivery, improving test coverage to 95%, and optimizing enterprise backend performance. Experienced in Agile environments with cross-functional global teams.</p>
-        </div>
-      </section>
+    <section class="impact-section section-wrap" id="impact" aria-labelledby="impact-title">
+      <div class="section-intro">
+        <p class="section-kicker">01 / Engineering impact</p>
+        <h2 id="impact-title">Outcomes over output.</h2>
+        <p>Practical results from modernizing and delivering enterprise software.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card"><strong aria-label="4.8 plus years"><span class="counter-value" data-counter="4.8" data-decimals="1" aria-hidden="true">4.8</span><span aria-hidden="true">+</span></strong><h3>Years in backend engineering</h3><p>Building and supporting enterprise services.</p></article>
+        <article class="impact-card"><strong aria-label="95 percent"><span class="counter-value" data-counter="95" aria-hidden="true">95</span><span aria-hidden="true">%</span></strong><h3>Automated test coverage</h3><p>Raised from 60% across payment services.</p></article>
+        <article class="impact-card"><strong aria-label="20 plus stories"><span class="counter-value" data-counter="20" aria-hidden="true">20</span><span aria-hidden="true">+</span></strong><h3>Stories per sprint</h3><p>Delivered with cross-functional teams.</p></article>
+        <article class="impact-card"><strong aria-label="12 plus hours"><span class="counter-value" data-counter="12" aria-hidden="true">12</span><span aria-hidden="true">+</span></strong><h3>Hours saved each week</h3><p>Through repetitive-workflow automation.</p></article>
+        <article class="impact-card"><strong aria-label="2 financial services clients"><span class="counter-value" data-counter="2" aria-hidden="true">2</span></strong><h3>Financial services clients</h3><p>Barclays and Charles Schwab.</p></article>
+        <article class="impact-card"><strong aria-label="10 plus critical issues"><span class="counter-value" data-counter="10" aria-hidden="true">10</span><span aria-hidden="true">+</span></strong><h3>Critical issues resolved</h3><p>SonarQube vulnerabilities and code smells.</p></article>
+      </div>
+    </section>
 
-      <section class="content-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading"><span class="section-number">02</span><h2 id="experience-title">Experience</h2></div>
-        <div class="section-body experience-list">
-          <article class="role">
-            <div class="role-meta">
-              <div><h3>Software Development Senior Analyst</h3><p class="company">Accenture <span>·</span> Barclays, Cards &amp; Payment Solutions</p></div>
-              <p class="dates">Jan 2025 <span>—</span> Present</p>
+    <section class="architecture-section section-dark" id="architecture" aria-labelledby="architecture-title">
+      <div class="section-wrap">
+        <div class="section-intro section-intro-light">
+          <p class="section-kicker">02 / Systems architecture</p>
+          <h2 id="architecture-title">Systems, from the edge inward.</h2>
+          <p>Simplified conceptual views of the financial platforms and engineering concerns in my experience.</p>
+        </div>
+        <div class="architecture-grid">
+          <article class="architecture-card">
+            <div class="architecture-heading"><div><span class="card-index">A / PAYMENTS</span><h3>Payment services</h3></div><span class="architecture-tag">Illustrative flow</span></div>
+            <div class="flow-diagram" role="img" aria-label="Illustrative payment flow: customer to API gateway to payment service, with a Kafka fraud service and a database">
+              <div class="flow-node flow-node-entry"><span>01</span><strong>Customer</strong><small>Payment request</small></div>
+              <span class="flow-arrow" aria-hidden="true">↓</span>
+              <div class="flow-node"><span>02</span><strong>API gateway</strong><small>Secure entry point</small></div>
+              <span class="flow-arrow" aria-hidden="true">↓</span>
+              <div class="flow-node flow-node-accent"><span>03</span><strong>Payment service</strong><small>Spring Boot · Java</small></div>
+              <div class="flow-branches">
+                <div class="flow-node"><span>04A</span><strong>Fraud service</strong><small>Kafka events</small></div>
+                <div class="flow-node"><span>04B</span><strong>Data store</strong><small>Transaction data</small></div>
+              </div>
             </div>
-            <ul class="achievement-list">
-              <li>Modernized legacy backend services by migrating REST APIs from Java 8 to Java 17/21 with Spring Boot 3, improving stability, scalability, and long-term maintainability.</li>
-              <li>Refactored monolithic legacy modules into modular service components, reducing technical debt and improving developer productivity.</li>
-              <li>Secured enterprise REST endpoints using Spring Security and CSRF protection, strengthening compliance across payment services.</li>
-              <li>Raised automated test coverage from 60% to 95% with JUnit, GitLab Duo, and AI-assisted automation, reducing regression defects and release risk.</li>
-              <li>Automated repetitive workflows, saving approximately 12+ engineering hours per week and accelerating sprint delivery.</li>
-              <li>Authored API flow and integration documentation, improving onboarding and production troubleshooting; mentored junior developers in clean architecture, coding standards, debugging, and functional design.</li>
-              <li>Partnered with business, QA, and DevOps teams in Agile sprints to deliver payment-processing enhancements on schedule.</li>
-            </ul>
+            <ul class="architecture-highlights"><li>Java 8 → 17/21 modernization</li><li>Spring Boot 3</li><li>Spring Security &amp; CSRF</li><li>95% test coverage</li></ul>
           </article>
-
-          <article class="role">
-            <div class="role-meta">
-              <div><h3>Software Engineer</h3><p class="company">Mphasis <span>·</span> Charles Schwab, Share Trading &amp; Transaction Services</p></div>
-              <p class="dates">Aug 2021 <span>—</span> Dec 2024</p>
+          <article class="architecture-card architecture-card-trading">
+            <div class="architecture-heading"><div><span class="card-index">B / TRADING</span><h3>Trade processing</h3></div><span class="architecture-tag">Experience highlights</span></div>
+            <div class="trading-visual" role="img" aria-label="Conceptual distributed trading platform with transaction services, messaging, and optimized data access">
+              <div class="trade-center"><span class="trade-pulse"></span><strong>Transaction<br>services</strong><small>High availability</small></div>
+              <div class="trade-node trade-node-top"><span>01</span>Trade requests</div>
+              <div class="trade-node trade-node-left"><span>02</span>Service APIs</div>
+              <div class="trade-node trade-node-right"><span>03</span>Event messaging</div>
+              <div class="trade-node trade-node-bottom"><span>04</span>Optimized data access</div>
+              <div class="trade-line trade-line-one"></div><div class="trade-line trade-line-two"></div><div class="trade-line trade-line-three"></div><div class="trade-line trade-line-four"></div>
             </div>
-            <ul class="achievement-list">
-              <li>Designed and maintained highly available trade-processing and transaction-settlement microservices with Java and Spring Boot in a distributed environment.</li>
-              <li>Led backend API migration from Java 8 to Java 17, improving performance, maintainability, and modern framework compatibility.</li>
-              <li>Optimized SQL queries and processing logic, reducing query execution time by 5% and API response latency by 50 ms.</li>
-              <li>Introduced Swagger/OpenAPI documentation standards, reducing integration and testing effort for dependent teams.</li>
-              <li>Resolved 10+ critical SonarQube vulnerabilities and code smells, improving quality, maintainability, and static-analysis compliance.</li>
-              <li>Delivered 20+ user stories per sprint and integrated centralized ELI Logger monitoring for faster incident identification and resolution.</li>
-              <li>Improved debugging efficiency by 50% through IntelliJ profiling, log analysis, and root-cause investigation; coordinated releases with global teams across three locations.</li>
-            </ul>
+            <ul class="architecture-highlights"><li>Distributed microservices</li><li>Low-latency transaction processing</li><li>SQL query optimization</li><li>Centralized monitoring &amp; logging</li></ul>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content-section expertise-section" id="expertise" aria-labelledby="expertise-title">
-        <div class="section-heading"><span class="section-number">03</span><h2 id="expertise-title">Technical expertise</h2></div>
-        <div class="section-body skill-groups">
-          <div class="skill-row"><h3>Languages &amp; frameworks</h3><p>Java 8 / 17 / 21 <span>·</span> Spring Boot 2 / 3 <span>·</span> Maven <span>·</span> JUnit <span>·</span> REST <span>·</span> Angular</p></div>
-          <div class="skill-row"><h3>Data &amp; messaging</h3><p>MySQL <span>·</span> Oracle <span>·</span> MongoDB <span>·</span> Kafka <span>·</span> RabbitMQ</p></div>
-          <div class="skill-row"><h3>Cloud &amp; DevOps</h3><p>GCP <span>·</span> PCF <span>·</span> Docker <span>·</span> Kubernetes <span>·</span> GitLab CI/CD</p></div>
-          <div class="skill-row"><h3>Tools &amp; platforms</h3><p>Git <span>·</span> Bitbucket <span>·</span> IntelliJ IDEA <span>·</span> SonarQube <span>·</span> JIRA <span>·</span> Service Registry <span>·</span> Agentic AI <span>·</span> Generative AI</p></div>
-        </div>
-      </section>
+    <section class="case-section section-wrap" id="case-studies" aria-labelledby="case-title">
+      <div class="section-intro">
+        <p class="section-kicker">03 / Selected work</p>
+        <h2 id="case-title">Engineering in context.</h2>
+        <p>Three recurring challenges, and the approaches used to address them.</p>
+      </div>
+      <div class="case-grid">
+        <article class="case-card"><span class="case-number">CASE 01</span><div class="case-icon" aria-hidden="true">↗</div><h3>Banking API modernization</h3><dl><div><dt>Challenge</dt><dd>Legacy Java services needed a maintainable path forward.</dd></div><div><dt>Approach</dt><dd>Modernized APIs with Java 17/21 and Spring Boot 3.</dd></div><div><dt>Outcome</dt><dd>Improved maintainability, stability, and long-term scalability.</dd></div></dl><span class="case-stack">JAVA <i>·</i> SPRING BOOT <i>·</i> REST</span></article>
+        <article class="case-card"><span class="case-number">CASE 02</span><div class="case-icon" aria-hidden="true">⌘</div><h3>Trade processing platform</h3><dl><div><dt>Challenge</dt><dd>Reliable transaction services in a distributed environment.</dd></div><div><dt>Approach</dt><dd>Built and maintained highly available microservices; optimized SQL.</dd></div><div><dt>Outcome</dt><dd>Reduced query time by 5% and API latency by 50 ms.</dd></div></dl><span class="case-stack">MICROSERVICES <i>·</i> SQL <i>·</i> OBSERVABILITY</span></article>
+        <article class="case-card"><span class="case-number">CASE 03</span><div class="case-icon" aria-hidden="true">✳</div><h3>AI-assisted quality engineering</h3><dl><div><dt>Challenge</dt><dd>Manual testing effort and regression risk.</dd></div><div><dt>Approach</dt><dd>Used JUnit, GitLab Duo, and AI-assisted test automation.</dd></div><div><dt>Outcome</dt><dd>Raised automated coverage from 60% to 95%.</dd></div></dl><span class="case-stack">JUNIT <i>·</i> GITLAB DUO <i>·</i> AUTOMATION</span></article>
+      </div>
+    </section>
 
-      <section class="content-section credentials-section" aria-labelledby="credentials-title">
-        <div class="section-heading"><span class="section-number">04</span><h2 id="credentials-title">Certifications</h2></div>
-        <div class="section-body credential-list">
-          <p><span>01</span> <a href="https://www.credly.com/badges/05f91e37-56e4-4974-9995-8ab682bf29a2/linked_in_profile" target="_blank" rel="noopener noreferrer">Professional Cloud Developer</a> <span class="credential-provider">Google Cloud · Credly</span></p>
-          <p><span>02</span> <a href="https://www.credly.com/badges/91d76ada-a0a5-4c9b-b654-f2ea7abba01b/linked_in?t=t9l62x" target="_blank" rel="noopener noreferrer">Generative AI Leader</a> <span class="credential-provider">Google Cloud · Credly</span></p>
-          <p><span>03</span> <a href="https://learn.microsoft.com/en-us/users/nareshchandrapandey-7624/achievements/d6vbt5aj" target="_blank" rel="noopener noreferrer">Introduction to GitHub Copilot</a> <span class="credential-provider">Microsoft Learn</span></p>
+    <section class="experience-section section-dark" id="experience" aria-labelledby="experience-title">
+      <div class="section-wrap">
+        <div class="section-intro section-intro-light">
+          <p class="section-kicker">04 / Professional experience</p>
+          <h2 id="experience-title">A track record of making systems better.</h2>
+          <p>Backend engineering across payments, banking, and trading platforms.</p>
         </div>
-      </section>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date"><span>JAN 2025 — PRESENT</span><i></i></div>
+            <div class="timeline-content"><div class="timeline-heading"><div><span class="timeline-company">ACCENTURE <span>·</span> BARCLAYS</span><h3>Software Development Senior Analyst</h3><p>Cards &amp; Payment Solutions</p></div><span class="timeline-period">Pune, India</span></div>
+              <ul class="timeline-points"><li>Modernized REST APIs from Java 8 to Java 17/21 and Spring Boot 3.</li><li>Improved test coverage from 60% to 95%; automated work saving approximately 12+ hours weekly.</li><li>Strengthened API security with Spring Security and CSRF protection.</li><li>Refactored legacy modules, documented integrations, and mentored junior developers.</li></ul>
+              <div class="timeline-tags"><span>JAVA</span><span>SPRING BOOT</span><span>SECURITY</span><span>AI-ASSISTED TESTING</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date"><span>AUG 2021 — DEC 2024</span><i></i></div>
+            <div class="timeline-content"><div class="timeline-heading"><div><span class="timeline-company">MPHASIS <span>·</span> CHARLES SCHWAB</span><h3>Software Engineer</h3><p>Share Trading &amp; Transaction Services</p></div><span class="timeline-period">India</span></div>
+              <ul class="timeline-points"><li>Designed and maintained highly available trade-processing and settlement microservices.</li><li>Migrated backend APIs from Java 8 to Java 17 and optimized SQL query performance.</li><li>Reduced API response latency by 50 ms; improved debugging efficiency by 50%.</li><li>Delivered 20+ stories per sprint and integrated centralized monitoring and logging.</li></ul>
+              <div class="timeline-tags"><span>JAVA</span><span>DISTRIBUTED SYSTEMS</span><span>SQL</span><span>OBSERVABILITY</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <section class="content-section education-section" id="education" aria-labelledby="education-title">
-        <div class="section-heading"><span class="section-number">05</span><h2 id="education-title">Education</h2></div>
-        <div class="section-body education-detail">
-          <div><h3>Bachelor of Technology</h3><p>Computer Science Engineering</p><p class="institution">Chhattisgarh Swami Vivekanand Technical University, Bhilai</p></div>
-          <div class="education-meta"><span>2017 — 2021</span><strong>72.03%</strong></div>
+    <section class="ai-section section-wrap" id="ai-engineering" aria-labelledby="ai-title">
+      <div class="ai-orbit" aria-hidden="true"><span>AI</span><i></i><i></i><i></i><i></i></div>
+      <div class="ai-copy"><p class="section-kicker">05 / AI engineering corner</p><h2 id="ai-title">Exploring AI for better engineering.</h2><p>Applying AI-assisted tools to practical development workflows, testing, and engineering productivity.</p><a href="#contact" class="text-link">Let’s talk about engineering <span aria-hidden="true">↗</span></a></div>
+      <div class="ai-topics" aria-label="AI engineering focus areas"><span>Agent workflows</span><span>Multi-agent systems</span><span>Prompt engineering</span><span>GitHub Copilot</span><span>AI-assisted development</span><span>Engineering automation</span></div>
+    </section>
+
+    <section class="expertise-section section-wrap" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-intro">
+        <p class="section-kicker">06 / Tech stack</p>
+        <h2 id="expertise-title">Tools for dependable delivery.</h2>
+        <p>A practical toolkit spanning backend development, infrastructure, and AI-assisted workflows.</p>
+      </div>
+      <div class="stack-grid">
+        <article class="stack-card"><span class="stack-index">01</span><h3>Backend</h3><div class="stack-tags"><span>Java 8 / 17 / 21</span><span>Spring Boot 2 / 3</span><span>REST APIs</span><span>Maven</span><span>JUnit</span></div></article>
+        <article class="stack-card"><span class="stack-index">02</span><h3>Data &amp; messaging</h3><div class="stack-tags"><span>Oracle</span><span>MySQL</span><span>MongoDB</span><span>Kafka</span><span>RabbitMQ</span></div></article>
+        <article class="stack-card"><span class="stack-index">03</span><h3>Cloud &amp; infrastructure</h3><div class="stack-tags"><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>PCF</span></div></article>
+        <article class="stack-card"><span class="stack-index">04</span><h3>Delivery &amp; AI</h3><div class="stack-tags"><span>GitLab CI/CD</span><span>Git</span><span>Bitbucket</span><span>SonarQube</span><span>GitHub Copilot</span><span>Generative AI</span><span>Agentic AI</span></div></article>
+      </div>
+    </section>
+
+    <section class="credentials-section section-dark" id="credentials" aria-labelledby="credentials-title">
+      <div class="section-wrap">
+        <div class="section-intro section-intro-light">
+          <p class="section-kicker">07 / Credentials</p>
+          <h2 id="credentials-title">Learning, verified.</h2>
+          <p>Certifications and achievements with links to their verification pages.</p>
         </div>
-      </section>
-    </div>
+        <div class="credential-grid">
+          <a class="credential-card" href="https://www.credly.com/badges/05f91e37-56e4-4974-9995-8ab682bf29a2/linked_in_profile" target="_blank" rel="noopener noreferrer"><span class="credential-type">GOOGLE CLOUD <i>·</i> CREDLY</span><span class="credential-symbol" aria-hidden="true">G</span><h3>Professional Cloud Developer</h3><span class="credential-link">Verify credential <b aria-hidden="true">↗</b></span></a>
+          <a class="credential-card" href="https://www.credly.com/badges/91d76ada-a0a5-4c9b-b654-f2ea7abba01b/linked_in?t=t9l62x" target="_blank" rel="noopener noreferrer"><span class="credential-type">GOOGLE CLOUD <i>·</i> CREDLY</span><span class="credential-symbol" aria-hidden="true">G</span><h3>Generative AI Leader</h3><span class="credential-link">Verify credential <b aria-hidden="true">↗</b></span></a>
+          <a class="credential-card" href="https://learn.microsoft.com/en-us/users/nareshchandrapandey-7624/achievements/d6vbt5aj" target="_blank" rel="noopener noreferrer"><span class="credential-type">MICROSOFT LEARN</span><span class="credential-symbol credential-symbol-ms" aria-hidden="true">M</span><h3>Introduction to GitHub Copilot</h3><span class="credential-link">View achievement <b aria-hidden="true">↗</b></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="knowledge-section section-wrap" id="knowledge" aria-labelledby="knowledge-title">
+      <div class="section-intro">
+        <p class="section-kicker">08 / Knowledge hub</p>
+        <h2 id="knowledge-title">Questions worth exploring.</h2>
+        <p>Areas of ongoing learning and technical interest.</p>
+      </div>
+      <div class="knowledge-grid">
+        <span>Java performance tuning</span><span>Spring Boot practices</span><span>Microservices patterns</span><span>Kafka architecture</span><span>System design</span><span>Cloud engineering</span><span>AI agent workflows</span>
+      </div>
+    </section>
+
+    <section class="education-section section-wrap" id="education" aria-labelledby="education-title">
+      <div class="section-intro">
+        <p class="section-kicker">09 / Education</p>
+        <h2 id="education-title">Strong foundations.</h2>
+      </div>
+      <div class="education-detail">
+        <div><span class="education-year">2017 — 2021</span><h3>Bachelor of Technology</h3><p>Computer Science Engineering</p><p class="institution">Chhattisgarh Swami Vivekanand Technical University, Bhilai</p></div>
+        <strong>72.03<span>%</span></strong>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="contact-inner">
+        <p class="section-kicker">10 / Get in touch</p>
+        <h2 id="contact-title">Let’s build something <span>dependable.</span></h2>
+        <p>For thoughtful conversations about backend engineering, enterprise systems, and AI-assisted development.</p>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:naresh19chandra98@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="https://www.linkedin.com/in/naresh-chandra-pandey-b0973b1a3/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-meta"><span>Pune, India</span><a href="tel:+919340494150">+91 93404 94150</a><a href="mailto:naresh19chandra98@gmail.com">naresh19chandra98@gmail.com</a></div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="footer-name" href="#top">Naresh Chandra Pandey</a>
-    <span>Pune, India</span>
-    <a href="mailto:naresh19chandra98@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
-  </footer>
+  <footer class="site-footer"><a class="footer-name" href="#top">NP <span>Naresh Chandra Pandey</span></a><span>Backend engineering · Pune, India</span><a href="#top">Back to top ↑</a></footer>
+
+  <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title">
+    <div class="command-head"><div><p class="section-kicker">NAVIGATION</p><h2 id="command-title">Where to?</h2></div><button class="dialog-close" type="button" id="close-commands" aria-label="Close command palette">Esc</button></div>
+    <label class="command-search"><span aria-hidden="true">⌕</span><input id="command-search" type="search" aria-label="Search sections or actions" placeholder="Search sections or actions..." autocomplete="off"><kbd>ESC</kbd></label>
+    <p class="command-label">JUMP TO</p>
+    <div class="command-list" id="command-list">
+      <a class="command-item" href="#main" data-search="about profile overview"><span class="command-icon">⌂</span><span>About<small>Profile and introduction</small></span><kbd>↵</kbd></a>
+      <a class="command-item" href="#case-studies" data-search="projects case studies work"><span class="command-icon">◫</span><span>Projects &amp; case studies<small>Selected engineering work</small></span><kbd>↵</kbd></a>
+      <a class="command-item" href="#experience" data-search="experience employment career"><span class="command-icon">⌁</span><span>Experience<small>Professional timeline</small></span><kbd>↵</kbd></a>
+      <a class="command-item" href="#expertise" data-search="skills technology tech stack"><span class="command-icon">⌘</span><span>Skills &amp; tech stack<small>Tools and technologies</small></span><kbd>↵</kbd></a>
+      <a class="command-item" href="#architecture" data-search="architecture systems diagrams"><span class="command-icon">⌬</span><span>Architecture<small>Systems and services</small></span><kbd>↵</kbd></a>
+      <a class="command-item" href="#credentials" data-search="certifications credentials badges"><span class="command-icon">✳</span><span>Certifications<small>Verified credentials</small></span><kbd>↵</kbd></a>
+      <button class="command-item" type="button" data-action="print" data-search="resume print pdf download"><span class="command-icon">↓</span><span>Print / save resume<small>Open the browser print dialog</small></span><kbd>↵</kbd></button>
+      <a class="command-item" href="#contact" data-search="contact email linkedin"><span class="command-icon">↗</span><span>Contact<small>Email and LinkedIn</small></span><kbd>↵</kbd></a>
+    </div>
+    <p class="command-empty" id="command-empty" hidden>No matching sections.</p>
+    <div class="command-foot"><span>Navigate your way</span><span><kbd>Ctrl</kbd> <kbd>K</kbd> to open</span></div>
+  </dialog>
 </body>
 </html>
