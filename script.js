@@ -7,6 +7,9 @@ const commandItems = [...document.querySelectorAll(".command-item")];
 const commandEmpty = document.querySelector("#command-empty");
 
 printButton?.addEventListener("click", () => window.print());
+document.querySelectorAll("[data-print-resume]").forEach((button) => {
+  button.addEventListener("click", () => window.print());
+});
 
 window.addEventListener("beforeprint", () => {
   document.querySelectorAll("[data-counter]").forEach((element) => {
@@ -68,8 +71,47 @@ commandDialog?.addEventListener("click", (event) => {
   if (event.target === commandDialog) commandDialog.close();
 });
 
+document.querySelectorAll(".architecture-card").forEach((card) => {
+  const nodes = [...card.querySelectorAll("[data-architecture-node]")];
+  const detail = card.querySelector(".diagram-detail");
+
+  nodes.forEach((node) => {
+    node.setAttribute("aria-pressed", "false");
+    node.addEventListener("click", () => {
+      nodes.forEach((otherNode) => {
+        otherNode.setAttribute("aria-pressed", String(otherNode === node));
+      });
+
+      if (detail) detail.textContent = node.dataset.detail ?? "";
+    });
+  });
+});
+
+const typewriterNodes = [...document.querySelectorAll("[data-typewriter]")];
+const reducedMotionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (!reducedMotionPreference.matches) {
+  typewriterNodes.forEach((node, nodeIndex) => {
+    const text = node.textContent ?? "";
+    node.textContent = "";
+
+    window.setTimeout(() => {
+      let characterIndex = 0;
+      const typeNextCharacter = () => {
+        node.textContent = text.slice(0, characterIndex + 1);
+        characterIndex += 1;
+        if (characterIndex < text.length) {
+          window.setTimeout(typeNextCharacter, 24);
+        }
+      };
+
+      typeNextCharacter();
+    }, 260 + nodeIndex * 170);
+  });
+}
+
 if ("IntersectionObserver" in window) {
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reducedMotion = reducedMotionPreference.matches;
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;

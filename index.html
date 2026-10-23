@@ -34,10 +34,11 @@
       <div class="hero-inner">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> Java Backend Developer <span class="eyebrow-divider">/</span> Pune, India</p>
-          <h1 id="hero-title">Building reliable systems for <span>critical moments.</span></h1>
-          <p class="hero-summary">I modernize backend platforms for banking, trading, and payments—with a focus on dependable services, thoughtful architecture, and measurable engineering outcomes.</p>
+          <h1 id="hero-title">Building enterprise systems that process <span>millions of transactions reliably.</span></h1>
+          <p class="hero-summary">Java Backend Developer with 4.8+ years of experience delivering secure, scalable microservices and cloud-native solutions for banking, trading, and payment platforms.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#architecture">Explore architecture <span aria-hidden="true">↘</span></a>
+            <a class="button button-primary" href="#architecture">View architecture <span aria-hidden="true">↘</span></a>
+            <button class="button button-quiet" type="button" data-print-resume>Print / save resume <span aria-hidden="true">↗</span></button>
             <a class="button button-quiet" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
           </div>
           <div class="hero-contact" aria-label="Contact links">
@@ -48,10 +49,13 @@
         </div>
         <div class="terminal-card" role="group" aria-label="Engineering focus">
           <div class="terminal-top"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>profile — zsh</span><span>● online</span></div>
-          <div class="terminal-body">
-            <p><span class="terminal-prompt">$</span> whoami</p>
-            <p class="terminal-output">Naresh Chandra Pandey</p>
-            <p><span class="terminal-prompt">$</span> focus --list</p>
+          <div class="sr-only">Terminal summary: Naresh Chandra Pandey, Software Engineer. Specializations include microservices architecture, banking and payment systems, trading applications, and AI engineering workflows.</div>
+          <div class="terminal-body" aria-hidden="true">
+            <p><span class="terminal-prompt">$</span> <span data-typewriter>whoami</span></p>
+            <p class="terminal-output"><span data-typewriter>Naresh Chandra Pandey</span></p>
+            <p><span class="terminal-prompt">$</span> <span data-typewriter>role</span></p>
+            <p class="terminal-output"><span data-typewriter>Software Engineer</span></p>
+            <p><span class="terminal-prompt">$</span> <span data-typewriter>specialization --list</span></p>
             <ul class="terminal-list">
               <li><span>✓</span> Microservices architecture</li>
               <li><span>✓</span> Banking &amp; payment systems</li>
@@ -92,29 +96,31 @@
         <div class="architecture-grid">
           <article class="architecture-card">
             <div class="architecture-heading"><div><span class="card-index">A / PAYMENTS</span><h3>Payment services</h3></div><span class="architecture-tag">Illustrative flow</span></div>
-            <div class="flow-diagram" role="img" aria-label="Illustrative payment flow: customer to API gateway to payment service, with a Kafka fraud service and a database">
-              <div class="flow-node flow-node-entry"><span>01</span><strong>Customer</strong><small>Payment request</small></div>
+            <div class="flow-diagram" role="group" aria-label="Interactive illustrative payment flow">
+              <button class="flow-node flow-node-entry" type="button" data-architecture-node data-detail="The customer initiates a payment request."><span>01</span><strong>Customer</strong><small>Payment request</small></button>
               <span class="flow-arrow" aria-hidden="true">↓</span>
-              <div class="flow-node"><span>02</span><strong>API gateway</strong><small>Secure entry point</small></div>
+              <button class="flow-node" type="button" data-architecture-node data-detail="The API gateway provides a secure entry point for payment requests."><span>02</span><strong>API gateway</strong><small>Secure entry point</small></button>
               <span class="flow-arrow" aria-hidden="true">↓</span>
-              <div class="flow-node flow-node-accent"><span>03</span><strong>Payment service</strong><small>Spring Boot · Java</small></div>
+              <button class="flow-node flow-node-accent" type="button" data-architecture-node data-detail="The Java and Spring Boot payment service handles the core payment workflow."><span>03</span><strong>Payment service</strong><small>Spring Boot · Java</small></button>
               <div class="flow-branches">
-                <div class="flow-node"><span>04A</span><strong>Fraud service</strong><small>Kafka events</small></div>
-                <div class="flow-node"><span>04B</span><strong>Data store</strong><small>Transaction data</small></div>
+                <button class="flow-node" type="button" data-architecture-node data-detail="A Kafka event connects payment processing with a fraud service."><span>04A</span><strong>Fraud service</strong><small>Kafka events</small></button>
+                <button class="flow-node" type="button" data-architecture-node data-detail="The data store persists transaction information."><span>04B</span><strong>Data store</strong><small>Transaction data</small></button>
               </div>
             </div>
+            <p class="diagram-detail" aria-live="polite">Select a component to explore its role in this illustrative flow.</p>
             <ul class="architecture-highlights"><li>Java 8 → 17/21 modernization</li><li>Spring Boot 3</li><li>Spring Security &amp; CSRF</li><li>95% test coverage</li></ul>
           </article>
           <article class="architecture-card architecture-card-trading">
             <div class="architecture-heading"><div><span class="card-index">B / TRADING</span><h3>Trade processing</h3></div><span class="architecture-tag">Experience highlights</span></div>
-            <div class="trading-visual" role="img" aria-label="Conceptual distributed trading platform with transaction services, messaging, and optimized data access">
-              <div class="trade-center"><span class="trade-pulse"></span><strong>Transaction<br>services</strong><small>High availability</small></div>
-              <div class="trade-node trade-node-top"><span>01</span>Trade requests</div>
-              <div class="trade-node trade-node-left"><span>02</span>Service APIs</div>
-              <div class="trade-node trade-node-right"><span>03</span>Event messaging</div>
-              <div class="trade-node trade-node-bottom"><span>04</span>Optimized data access</div>
-              <div class="trade-line trade-line-one"></div><div class="trade-line trade-line-two"></div><div class="trade-line trade-line-three"></div><div class="trade-line trade-line-four"></div>
+            <div class="trading-visual" role="group" aria-label="Interactive conceptual distributed trading platform">
+              <button class="trade-center" type="button" data-architecture-node data-detail="High-availability transaction services coordinate trading workflows." aria-pressed="false"><span class="trade-pulse" aria-hidden="true"></span><strong>Transaction<br>services</strong><small>High availability</small></button>
+              <button class="trade-node trade-node-top" type="button" data-architecture-node data-detail="Trade requests enter the platform and begin transaction processing." aria-pressed="false"><span>01</span>Trade requests</button>
+              <button class="trade-node trade-node-left" type="button" data-architecture-node data-detail="Service APIs expose functionality across distributed services." aria-pressed="false"><span>02</span>Service APIs</button>
+              <button class="trade-node trade-node-right" type="button" data-architecture-node data-detail="Event messaging supports communication between distributed services." aria-pressed="false"><span>03</span>Event messaging</button>
+              <button class="trade-node trade-node-bottom" type="button" data-architecture-node data-detail="Optimized data access supports transaction processing." aria-pressed="false"><span>04</span>Optimized data access</button>
+              <div class="trade-line trade-line-one" aria-hidden="true"></div><div class="trade-line trade-line-two" aria-hidden="true"></div><div class="trade-line trade-line-three" aria-hidden="true"></div><div class="trade-line trade-line-four" aria-hidden="true"></div>
             </div>
+            <p class="diagram-detail" aria-live="polite">Select a component to explore this conceptual trading platform.</p>
             <ul class="architecture-highlights"><li>Distributed microservices</li><li>Low-latency transaction processing</li><li>SQL query optimization</li><li>Centralized monitoring &amp; logging</li></ul>
           </article>
         </div>

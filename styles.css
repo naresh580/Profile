@@ -25,6 +25,7 @@ button { color: inherit; }
 :focus-visible { outline: 2px solid var(--lime); outline-offset: 4px; }
 .skip-link { position: fixed; z-index: 20; top: -60px; left: 16px; padding: 10px 14px; color: var(--deep); background: var(--green); }
 .skip-link:focus { top: 12px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
 
 .site-header { position: sticky; z-index: 10; top: 0; display: flex; justify-content: space-between; align-items: center; min-height: 76px; padding: 0 max(5vw, calc((100vw - 1240px) / 2)); border-bottom: 1px solid rgb(255 255 255 / 5%); background: rgb(11 18 16 / 92%); backdrop-filter: blur(16px); }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 13px; font-weight: 650; text-decoration: none; white-space: nowrap; }
@@ -111,6 +112,9 @@ h1 span, .contact-inner h2 span { color: var(--green); }
 .architecture-tag { padding: 4px 7px; border: 1px solid #344b3b; color: #9cb2a1; font-size: 8px; letter-spacing: .07em; text-transform: uppercase; }
 .flow-diagram { display: grid; justify-items: center; gap: 7px; }
 .flow-node { position: relative; z-index: 1; display: grid; grid-template-columns: 36px 1fr; align-items: center; width: min(100%, 310px); min-height: 52px; padding: 8px 12px; border: 1px solid #304638; background: #111a15; }
+.flow-node, .trade-node, .trade-center { color: inherit; font-family: inherit; text-align: left; cursor: pointer; }
+.flow-node:hover, .flow-node[aria-pressed="true"] { border-color: var(--green-strong); background: #1a2a1e; }
+.flow-node:focus-visible, .trade-node:focus-visible, .trade-center:focus-visible { z-index: 3; outline: 2px solid var(--lime); outline-offset: 3px; }
 .flow-node > span { grid-row: span 2; color: #7da58a; font-family: Consolas, monospace; font-size: 9px; }
 .flow-node strong { color: #dfe8e1; font-size: 11px; font-weight: 600; }
 .flow-node small { color: #819087; font-size: 9px; }
@@ -121,14 +125,17 @@ h1 span, .contact-inner h2 span { color: var(--green); }
 .flow-branches .flow-node { grid-template-columns: 32px 1fr; width: auto; padding: 8px; }
 .flow-branches .flow-node strong { font-size: 9px; }
 .flow-branches .flow-node small { font-size: 8px; }
+.diagram-detail { min-height: 34px; margin: 12px 0 0; padding: 8px 10px; border-left: 2px solid #4d9264; color: #9bab9f; background: #111a15; font-size: 10px; line-height: 1.5; }
 .architecture-highlights { display: flex; flex-wrap: wrap; gap: 7px; margin: 20px 0 0; padding: 17px 0 0; border-top: 1px solid #2b3b31; list-style: none; }
 .architecture-highlights li { padding: 5px 8px; border: 1px solid #2c3c32; color: #a7b7aa; font-size: 9px; }
 .trading-visual { position: relative; display: grid; width: 100%; max-width: 350px; height: 230px; margin: 0 auto; place-items: center; }
 .trade-center { position: relative; z-index: 2; display: grid; width: 125px; height: 95px; place-content: center; border: 1px solid #4c9163; background: #1b2c20; text-align: center; }
+.trade-center:hover, .trade-center[aria-pressed="true"] { border-color: var(--lime); background: #223823; }
 .trade-center strong { color: #e7f1e8; font-size: 11px; line-height: 1.35; }
 .trade-center small { margin-top: 5px; color: #91a997; font-size: 8px; }
 .trade-pulse { position: absolute; top: -4px; right: -4px; width: 8px; height: 8px; border: 2px solid #142218; border-radius: 50%; background: var(--green-strong); box-shadow: 0 0 0 4px rgb(75 209 139 / 16%); }
 .trade-node { position: absolute; z-index: 2; padding: 7px 9px; border: 1px solid #334638; color: #b8c8bb; background: #121b16; font-size: 8px; }
+.trade-node:hover, .trade-node[aria-pressed="true"] { border-color: var(--green-strong); color: #e0efe3; background: #1d2d21; }
 .trade-node span { margin-right: 4px; color: var(--green); font-family: Consolas, monospace; font-size: 8px; }
 .trade-node-top { top: 5px; left: 50%; transform: translateX(-50%); }
 .trade-node-left { top: 50%; left: 1px; transform: translateY(-50%); }
@@ -368,6 +375,7 @@ h1 span, .contact-inner h2 span { color: var(--green); }
   h1 { color: #102018; font-size: 38pt; }
   h1 span, .contact-inner h2 span { color: #17683a; }
   .terminal-card, .impact-card, .architecture-card, .case-card, .stack-card, .credential-card, .flow-node, .trade-node, .trade-center, .knowledge-grid span, .ai-topics span { color: #172019; background: white; border-color: #aebbb2; box-shadow: none; }
+  .diagram-detail { color: #172019; background: white; border-color: #526c58; }
   .section-wrap, .architecture-section .section-wrap, .experience-section .section-wrap, .credentials-section .section-wrap, .ai-section, .expertise-section, .knowledge-section, .education-section { padding: 20px 0; }
   .section-intro { margin-bottom: 14px; }
   .section-intro h2, .ai-copy h2 { font-size: 19pt; }
